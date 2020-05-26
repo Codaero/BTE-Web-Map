@@ -18,3 +18,5 @@ var circle = L.circle([54.069122, -4.769456], 2, {
   fillOpacity: 1,
   interactive: true,
 }).addTo(map);
+
+circle.on("click");
