@@ -28,6 +28,7 @@ var DraggableCircle = L.Circle.extend({
       },
     });
     this.addTo(map);
+    console.log(this);
   },
 
   moveObject: function (event) {
