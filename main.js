@@ -126,8 +126,7 @@ function addChildren()
   mother.addPoint(temp);
 }
 
-var tiles = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
 
   var searchControl = new L.esri.Controls.Geosearch().addTo(map);
 
@@ -141,3 +140,4 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   });
 
 setTimeout(function(){$('.pointer').fadeOut('slow');},3400);
+
